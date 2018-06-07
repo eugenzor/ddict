@@ -9,6 +9,7 @@ This is set of utils which was helpful for me. Let's see what we have here:
 This is a list of words, ordered by frequency of usage. Each word has a transcription. You can check if you have
 correct pronunciation of the most common words. E.g. it was a big surprise for me that one of the most common words "of"
 should be pronounced like "əv" not "of". The word stat looks like this:
+![Word stat](https://raw.githubusercontent.com/eugenzor/ddict/master/docs/example1.png)
 
 
 You can also check yourself if all the most common words are in your vocabulary. If not you can add them to learning.
@@ -18,11 +19,13 @@ You can also check yourself if all the most common words are in your vocabulary.
 It selects randomly list of sentences per each sound. So you can read sentences for the native speaker and ask to rate
 your sound pronunciation. Later you can return back to you problematic sounds and train them. The test sentences looks
 like this:
+![Sentences for a sound test](https://raw.githubusercontent.com/eugenzor/ddict/master/docs/example2.png)
 
 
-3. Sound for training.
+3. Sentences the sound training
 Since you have your sound rate you can focus on each particular sound and train it by pronouncing in different
 words and sentences. It looks like this:
+![Sentences the sound training](https://raw.githubusercontent.com/eugenzor/ddict/master/docs/example3.png)
 
 
 
