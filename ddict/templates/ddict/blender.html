@@ -1,0 +1,39 @@
+{% extends "ddict/base.html" %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block breadcrumbs %}{{ block.super }} / Blender{% endblock %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <style type="text/css">
+    #id_sounds li{
+      display: inline-block;
+      width: 50px;
+    }
+  </style>
+{% endblock %}
+
+
+{% block content %}
+  <style type="text/css"></style>
+  <form action="">
+    {{ form.as_p }}
+    <input type="submit" value="Generate  " />
+  </form>
+  <ol>
+  {% for word in words %}
+    <li>{{ word }}</li>
+  {% endfor %}
+  </ol>
+
+  <ol>
+  {% for phrase in sentences %}
+    <li>{{ phrase }}</li>
+  {% endfor %}
+  </ol>
+{% endblock %}
+
+{% block sidebar %}
+
+{% endblock %}
