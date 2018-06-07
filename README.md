@@ -19,11 +19,13 @@ You can also check yourself if all the most common words are in your vocabulary.
 It selects randomly list of sentences per each sound. So you can read sentences for the native speaker and ask to rate
 your sound pronunciation. Later you can return back to you problematic sounds and train them. The test sentences looks
 like this:
+![Sentences for a sound test](https://raw.githubusercontent.com/eugenzor/ddict/master/docs/example2.png)
 
 
-3. Sound for training.
+3. Sentences the sound training
 Since you have your sound rate you can focus on each particular sound and train it by pronouncing in different
 words and sentences. It looks like this:
+![Sentences the sound training](https://raw.githubusercontent.com/eugenzor/ddict/master/docs/example3.png)
 
 
 
