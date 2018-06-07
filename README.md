@@ -34,30 +34,30 @@ E.g. on Ubuntu 16.04
 
 Create the virtualenv for the project:
 ```bash
-virtualenv -p python3 ddict
+virtualenv -p python3.6 ddict
 cd ddict
 source bin/activate
 ```
 
 Clone the project:
 ```bash
-git clone https://github.com/eugenzor/ddict`
+git clone https://github.com/eugenzor/ddict
 ```
 
 Install the requirements
 ```bash
 cd ddict
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 Create the database structure
 ```bash
-./manager.py makemigrations
+./manage.py migrate
 ```
 
 Create a user for yourself
 ```bash
-./manager.py createsuperuser
+./manage.py createsuperuser
 ```
 
 Go and find the dictionary with transcription in stardict format. You can find it somewhere in the Internet.
@@ -66,27 +66,27 @@ You should find files with *.dict, *.idx and *.info. Copy all of them into the "
 
 Then load the word stat:
 ```bash
-./manager.py wordstat
+./manage.py wordstat
 ```
 
-Import transcription from the dictionary
+Import transcription from the dictionary. Import may take a lot of time, please relax or go to bed.
 ```bash
-./manager.py dictionary
+./manage.py dictionary
 ```
 
-Fill out the sounds:
+Fill out the sounds. It is also a long process, please no worries.
 ```bash
-./manager.py sounds
+./manage.py sounds
 ```
 
-Import sentences from the dictionary
+Import sentences from the dictionary. The last long process, don't panic!
 ```bash
-./manager.py import_sentences
+./manage.py import_sentences
 ```
 
 Now everything is ready and you can run the dev server:
 ```bash
-./manager.py runserver
+./manage.py runserver
 ```
 
 
@@ -99,12 +99,12 @@ Sound trainer: http://localhost:8000/blender/
 
 Create the csv table for rating your sounds (Should be rated by native speaker):
 ```bash
-./manager.py sound_rate_csv > ~/sound_rate.csv
+./manage.py sound_rate_csv > ~/sound_rate.csv
 ```
 
 Create the sound test sentences:
 ```
-./manager.py sentences > ~/train_sentences.txt
+./manage.py sentences > ~/train_sentences.txt
 ```
 
 Enjoy learning
