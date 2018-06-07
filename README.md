@@ -9,6 +9,7 @@ This is set of utils which was helpful for me. Let's see what we have here:
 This is a list of words, ordered by frequency of usage. Each word has a transcription. You can check if you have
 correct pronunciation of the most common words. E.g. it was a big surprise for me that one of the most common words "of"
 should be pronounced like "əv" not "of". The word stat looks like this:
+![Word stat](https://raw.githubusercontent.com/eugenzor/ddict/master/docs/example1.png)
 
 
 You can also check yourself if all the most common words are in your vocabulary. If not you can add them to learning.
