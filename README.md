@@ -32,41 +32,61 @@ words and sentences. It looks like this:
 E.g. on Ubuntu 16.04
 
 Create the virtualenv for the project:
-`virtualenv -p python3 ddict`
-`cd ddict`
-`source bin/activate`
+```bash
+virtualenv -p python3 ddict
+cd ddict
+source bin/activate
+```
 
 Clone the project:
-`git clone https://github.com/eugenzor/ddict`
+```bash
+git clone https://github.com/eugenzor/ddict`
+```
 
 Install the requirements
-`cd ddict`
-`pip install -r requirements`
+```bash
+cd ddict
+pip install -r requirements
+```
 
 Create the database structure
-`./manager.py makemigrations`
+```bash
+./manager.py makemigrations
+```
 
 Create a user for yourself
-`./manager.py createsuperuser`
+```bash
+./manager.py createsuperuser
+```
 
 Go and find the dictionary with transcription in stardict format. You can find it somewhere in the Internet.
 The Macmillan Dictionary is a very good dictionary. It has American pronunciation with international transcription.
 You should find files with *.dict, *.idx and *.info. Copy all of them into the "sources" folder.
 
 Then load the word stat:
-`./manager.py wordstat`
+```bash
+./manager.py wordstat
+```
 
 Import transcription from the dictionary
-`./manager.py dictionary`
+```bash
+./manager.py dictionary
+```
 
 Fill out the sounds:
-`./manager.py sounds`
+```bash
+./manager.py sounds
+```
 
 Import sentences from the dictionary
-`./manager.py import_sentences`
+```bash
+./manager.py import_sentences
+```
 
 Now everything is ready and you can run the dev server:
-`./manager.py runserver`
+```bash
+./manager.py runserver
+```
 
 
 ## Usage
@@ -77,9 +97,13 @@ Wordstat: http://localhost:8000/admin/ddict/word/
 Sound trainer: http://localhost:8000/blender/
 
 Create the csv table for rating your sounds (Should be rated by native speaker):
-`./manager.py sound_rate_csv > ~/sound_rate.csv`
+```bash
+./manager.py sound_rate_csv > ~/sound_rate.csv
+```
 
 Create the sound test sentences:
-`./manager.py sentences > ~/train_sentences.csv`
+```
+./manager.py sentences > ~/train_sentences.csv
+```
 
 Enjoy learning
