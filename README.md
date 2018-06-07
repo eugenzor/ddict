@@ -1,6 +1,4 @@
-====================
-Django based English learning helper
-====================
+# Django based English learning helper
 
 This project is made for my own purposes and for internal usage.
 But probably it may be helpful for anyone who would like to learn or improve English.
@@ -103,7 +101,7 @@ Create the csv table for rating your sounds (Should be rated by native speaker):
 
 Create the sound test sentences:
 ```
-./manager.py sentences > ~/train_sentences.csv
+./manager.py sentences > ~/train_sentences.txt
 ```
 
 Enjoy learning
