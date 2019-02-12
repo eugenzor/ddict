@@ -1,7 +1,7 @@
 beautifulsoup4==4.6.0
 certifi==2017.11.5
 chardet==3.0.4
-Django~>2.0.11
+Django==2.0.11
 django-extensions==1.9.8
 HTMLParser==0.0.2
 idna==2.6
@@ -10,10 +10,10 @@ py-sdvb==2.3
 PyStarDict==0.7
 python-mpd2==0.5.5
 pytz==2017.3
-requests==2.18.4
+requests==2.20.0
 six==1.11.0
 typing==3.6.2
-urllib3==1.22
+urllib3==1.23
 
 pytest-django==3.1.2
 pytest-sugar==0.8.0
